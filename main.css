@@ -6,3 +6,7 @@ body {
   user-select: none;
   cursor: pointer;
 }
+
+.link {
+  text-decoration: underline;
+}
