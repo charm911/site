@@ -5,6 +5,6 @@ function increment() {
 
   console.log("nbClicks = ", clicks);
 
-  divElement.innerHTML = ++clicks;
+  divElement.innerHTML = 'clicked ' + ++clicks + ' times';
 
 }
