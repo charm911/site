@@ -7,11 +7,11 @@ function increment() {
 
 let languageContent = {
   "en": {
-    greeting: "Welcome to the site stored in the not FRC repo!",
+    greeting: "Welcome to our domain!",
     clickme: "Click me!"
   },
   "fr": {
-    greeting: "Bienvenue sur le site depuis le repo not FRC site!",
+    greeting: "Bienvenue dans notre domaine!",
     clickme: "Clickez moi!"
   }
 }
