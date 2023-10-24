@@ -1,8 +1,8 @@
 body {
-  background-color: coral;
+  background-color: cadetblue;
 }
 
 .clickable {
-  border-color: green;
+  user-select: none;
   cursor: pointer;
 }
