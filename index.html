@@ -10,9 +10,13 @@
   <script src='main.js'></script>
 </head>
 
-<body>
-  <h1>Allo depuis le repo not FRC site!</h1>
-  <div class="clickable" onclick="increment();">Click me!</div>
+<body onload="switchLang('fr')">
+  <div><a href="#" onclick="switchLang('fr')">fr</a> <a href="#" onclick="switchLang('en')">en</a></div>
+
+  <h1 id="greeting"></h1>
+
+  <div id="clickme" class="clickable" onclick="increment();"></div>
+
   <h2>
     <div id="clicks">0</div>
   </h2>
