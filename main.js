@@ -7,12 +7,24 @@ function increment() {
 
 let languageContent = {
   "en": {
-    greeting: "Welcome to our domain!",
-    clickme: "Click me!"
+    navhome: "Home",
+    navinfo: "Info",
+    navgifts: "Gifts",
+    main_text: "Main Text",
+    sub_text: "Sub text",
+    gift_title: "data:gifts",
+    linkbox_title: "Informations",
+    linkbox_text: "Our school"
   },
   "fr": {
-    greeting: "Bienvenue dans notre domaine!",
-    clickme: "Clickez moi!"
+    navhome: "Accueil",
+    navinfo: "Info",
+    navgifts: "Cadeaux",
+    main_text: "Texte principal",
+    sub_text: "Sous-texte",
+    gift_title: "data:cadeaux",
+    linkbox_title: "Informations",
+    linkbox_text: "Notre école"
   }
 }
 
@@ -20,5 +32,14 @@ let languageContent = {
 function switchLang(lang) {
   for (let key in languageContent[lang]) {
     document.getElementById(key).innerHTML = languageContent[lang][key];
+  }
+
+  //flip la visibilité du bouton pour changer la langue
+  if (lang == "fr") {
+    document.getElementById("langFr").hidden = true;
+    document.getElementById("langEn").hidden = false;
+  } else {
+    document.getElementById("langEn").hidden = true;
+    document.getElementById("langFr").hidden = false;
   }
 }

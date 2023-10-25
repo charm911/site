@@ -6,3 +6,49 @@
 .link {
   text-decoration: underline;
 }
+
+
+/* Class for when element is above threshold */
+.pin-top {
+  position: relative;
+}
+
+#main_text {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 75px;
+  padding-top: 250px;
+  text-align: center;
+}
+
+#sub_text {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+/* Info box */
+
+#info {
+  background-color: darkgray;
+  padding-bottom: 757px;
+}
+
+#info_title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  margin-top: 421px;
+}
+
+/* Gift box */
+
+#gifts {
+  background-color: white;
+  padding-bottom: 757px;
+}
+
+#gift_title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  margin-top: 0px;
+}
