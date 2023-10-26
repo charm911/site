@@ -6,7 +6,10 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <title>Demo - 3532</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
+
   <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='social.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='pushpin.css'>
 
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -18,62 +21,105 @@
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
 </head>
 
 <body onload="switchLang('fr')">
 
-  <nav>
-    <div id="scroll" class="nav-wrapper amber darken-3">
-      <a href="#" class="brand-logo">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#home" id="navhome">Home</a></li>
-        <li><a href="#info" id="navinfo">Info</a></li>
-        <li><a href="#gifts" id="navgifts">Gifts</a></li>
-        <li id="langFr"><a class="clickable" onclick="switchLang('fr'); return false;">fr</a></li>
-        <li id="langEn"><a class="clickable" onclick="switchLang('en'); return false;">en</a></li>
-      </ul>
-    </div>
-  </nav>
+  <!-- teal darken-3
+  amber darken-3 -->
 
-  <!-- 
-  <h1 id="greeting"></h1>
+  <div id="home" class="block">
+    <nav class="pushpin" data-target="home">
+      <div class="nav-wrapper amber darken-3">
+        <div class="container">
+          <a href="#" class="brand-logo navhome"></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#info"><i class="material-icons right">info</i></a></li>
+            <li><a href="#gifts"><i class="material-icons right">card_giftcard</i></a></li>
+            <li class="langFr"><a class="clickable" onclick="switchLang('fr'); return false;">fr</a></li>
+            <li class="langEn"><a class="clickable" onclick="switchLang('en'); return false;">en</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <div id="clickme" class="clickable" onclick="increment();"></div>
-
-  <h2>
-    <div id="clicks">0</div>
-  </h2> -->
-
-  <div id="home" class="box">
+    <!-- contenu de la section -->
     <h1 id="main_text">Main Text</h1>
     <h2 id="sub_text">Sub text</h2>
+
   </div>
 
-  <div id="info" class="box">
+  <div id="info" class="block ">
+    <nav class="pushpin" data-target="info">
+      <div class="nav-wrapper yellow darken-2">
+        <div class="container">
+          <a href="#" class="brand-logo navinfo"></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#home"><i class="material-icons right">home</i></a></li>
+            <li><a href="#gifts"><i class="material-icons right">card_giftcard</i></a></li>
+            <li class="langFr"><a class="clickable" onclick="switchLang('fr'); return false;">fr</a></li>
+            <li class="langEn"><a class="clickable" onclick="switchLang('en'); return false;">en</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <h1 id="info_title">data:info</h1>
+
+    <div id="main_linkbox" class="box">
+      <div id="linkbox_right">
+        <h1 id="linkbox_title">Informations</h1>
+        <a href="https://mgr-a-m-parent.ecoles.csmv.qc.ca">
+          <p id="linkbox_text">Notre école</p>
+        </a>
+      </div>
+    </div>
   </div>
 
-  <div id="gifts" class="box">
+  <div id="gifts" class="block">
+    <nav class="pushpin" data-target="gifts">
+      <div class="nav-wrapper yellow darken-3">
+        <div class="container">
+          <a href="#" class="brand-logo navgifts"></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#home"><i class="material-icons right">home</i></a></li>
+            <li><a href="#info"><i class="material-icons right">info</i></a></li>
+            <li class="langFr"><a class="clickable" onclick="switchLang('fr'); return false;">fr</a></li>
+            <li class="langEn"><a class="clickable" onclick="switchLang('en'); return false;">en</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- contenu de la section -->
     <h1 id="gift_title">data:gifts</h1>
   </div>
 
-  <div id="main_linkbox" class="box">
-    <div id="linkbox_right">
-      <h1 id="linkbox_title">Informations</h1>
-      <a href="https://mgr-a-m-parent.ecoles.csmv.qc.ca">
-        <p id="linkbox_text">Notre école</p>
-      </a>
-    </div>
+  <!-- liens pour les réseaux sociaux -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large white" href="https://www.youtube.com/channel/UC4OgkTSyViJ_7zg1bg_N1Ag"
+      target="_blank">
+      <i class="large material-icons"><img class="zoom" src="images/youtube.png" alt="Youtube Channel"></i>
+    </a>
+
+    <a class="btn-floating btn-large white" href="https://www.instagram.com/piranhas_3532/" target="_blank">
+      <i class="large material-icons"><img class="zoom" src="images/instagram.png" alt="Instagram Page"></i>
+    </a>
   </div>
+
+
+
+
+
 
 </body>
 
 <!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src='main.js'></script>
-<script src="pushpin.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript" src="pushpin.js"></script>
+<script type="text/javascript" src="language.js"></script>
 
 
 </html>
